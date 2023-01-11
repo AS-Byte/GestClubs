@@ -30,10 +30,12 @@ public class Etudiant implements Serializable {
     Sexe sexe;
 
 
+    @JsonIgnore
     @ManyToOne
     Club clubR;
 
 
+    @JsonIgnore
     @ManyToMany(cascade = CascadeType.ALL)
     private List<Club> clubsA=new ArrayList<Club>();
 

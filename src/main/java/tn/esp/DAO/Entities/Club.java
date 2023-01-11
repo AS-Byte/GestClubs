@@ -36,6 +36,7 @@ public class Club implements Serializable {
     List<Etudiant> adherants=new ArrayList<Etudiant>();
 
 
+    @JsonIgnore
     @OneToMany (cascade = CascadeType.ALL)
     List<Activite> activites = new ArrayList<Activite>();
 
