@@ -1,2 +1,6 @@
-package tn.esp.DAO.Entities;public enum Sexe {
+package tn.esp.DAO.Entities;
+
+public enum Sexe {
+    FEMME,
+    HOMME
 }
